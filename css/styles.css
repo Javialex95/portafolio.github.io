@@ -1,4 +1,5 @@
 *{
+ 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -44,6 +45,29 @@ header .menu{
 .menu a:hover{
     color: rgb(167, 213, 233);
     border-bottom: 2px solid rgb(167, 213, 233);
+}
+
+.menu2{
+    position: fixed;
+    height: 60px;
+    background: #234757;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 20px 0px;
+    display: none;
+}
+
+.menu2 a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+    border-bottom: 2px solid transparent;
+    transition: 300ms all;
+}
+
+.menu2 a:hover{
+    color: rgb(167, 213, 233);
 }
 
 header .contenedor-texto{

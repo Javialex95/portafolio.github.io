@@ -1,9 +1,20 @@
 $(document).ready(function(){
+// Header
 
+$(window).on("scroll", function(){
+    if($(window).scrollTop()){
+        $('.menu2').css('display', 'block')
+    } else{
+        $('.menu2').css('display', 'none');
+    }
+})
+
+    // Gmail funcion
 var gmail = document.querySelector('#gmail');
 gmail.addEventListener('click', showEmail);
 
 function showEmail(){
+
     $.confirm({
         title: 'Correo',
         content: '' +
