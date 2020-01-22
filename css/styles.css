@@ -1,0 +1,282 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background: url('../img/Fondo-Header.png') black;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 1200px;
+}
+
+header .menu{
+    margin: 40px 0px;
+    text-align: right;
+    
+}
+
+.menu a{
+    margin: 0 20px;
+    display: inline-block;
+    padding-bottom: 9px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border-bottom: 2px solid transparent;
+    transition: 300ms all;
+}
+
+.menu a:hover{
+    color: rgb(167, 213, 233);
+    border-bottom: 2px solid rgb(167, 213, 233);
+}
+
+header .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 230px 0;
+}
+
+header .contenedor-texto .texto{
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 2px white;
+    padding: 20px 60px;
+}
+
+.texto h1{
+    color: rgba(255, 255, 255, 0.767);
+    margin: 0px;
+    font-size: 40px;
+    font-style: unset ;
+}
+
+.texto h2{
+    color: rgba(255, 255, 255, 0.767);
+    margin: 0px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+/* Main */
+.main .contenedor{
+    overflow: visible;
+}
+.main .acerca-de{
+text-align: center;
+color: black;
+
+}
+
+.acerca-de .foto{
+    margin-top: -60px;
+}
+
+.acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.acerca-de h3{
+color: rgb(51, 178, 233);
+font-size: 30px;
+}
+
+.acerca-de .texto{
+    font-size: 1em;
+    width: 80%;
+    margin: 40px auto;
+    line-height: 25px;
+}
+
+.main .trabajos{
+    background: #f2f2f2;
+   
+}
+
+.trabajos .titulo{
+    color: rgb(93, 186, 226);
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.main .trabajo {
+
+    margin: 15px 10px;
+    color: rgb(44, 143, 185);
+    text-align: center;
+}
+
+.description .nombre{
+    color: rgb(4, 118, 167);
+    font-style: initial;
+    margin: 10px 0px;
+}
+
+.description .categoria{
+    color: black;
+    font-style: initial;
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 300px;
+}
+
+footer .contacto{
+    background: #234757;
+    padding: 50px 0px;
+}
+
+footer .contenedor h3{
+    color: rgb(204, 225, 235);
+    font-size: 30px;
+    text-align: center;
+}
+
+footer .contenedor p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+footer .redes-sociales{
+    background: white;
+    padding: 60px 0px;
+}
+
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    text-align: center;
+    color: black;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    font-size: 35px;
+    margin: 0 40px;
+}
+
+footer .redes-sociales .facebook:hover{
+    background: #3b5998;
+    color: white;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+
+}
+
+footer .redes-sociales .instagram:hover{
+    background: #c13584;
+    color: white;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+}
+
+footer .redes-sociales .gmail:hover{
+    background: #DADADA;
+    color: red;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+}
+
+/* ALERTA EMAIL */
+.jconfirm.jconfirm-white .jconfirm-box, .jconfirm.jconfirm-light .jconfirm-box {
+    
+    width: 25%;
+}
+@media screen and (max-width: 945px){
+    .main .trabajos .contenedor-trabajos{
+        width: 89%;
+    }
+
+    .jconfirm.jconfirm-white .jconfirm-box, .jconfirm.jconfirm-light .jconfirm-box {
+    
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header .menu{
+        text-align: center;
+    }
+   
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 50%;
+        margin: 0px;
+    }
+
+    .main .trabajo img{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 367px){
+    header .contenedor-texto .texto .nombre{ 
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .menu a{
+        margin: 0 10px;
+    }
+
+    .jconfirm.jconfirm-white .jconfirm-box, .jconfirm.jconfirm-light .jconfirm-box {
+    
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 310px ){
+
+    header .contenedor-texto .texto .nombre{ 
+        font-size: 25px;
+    }
+
+    header .contenedor-texto .texto .profesion{ 
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 280px ){
+   header .contenedor-texto .texto{
+        padding: 10px 40px;
+    }
+
+    .menu a{
+        font-size: 12px;
+    }
+}
