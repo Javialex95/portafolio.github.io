@@ -8,6 +8,31 @@ $(window).on("scroll", function(){
         $('.menu2').css('display', 'none');
     }
 })
+// Scroll del menu
+
+$('.acercaLink').on('click', function(){
+    $('html, body').animate({
+        scrollTop: 470
+    }, 500);
+})
+
+var trabajos = $('#trabajos').offset().top;
+
+$('.trabajosLink').on('click', function(){
+    $('html, body').animate({
+        scrollTop: trabajos
+    }, 500);
+})
+
+var contacto = $('#contacto').offset().top;
+
+$('.contactoLink').on('click', function(){
+    $('html, body').animate({
+        scrollTop: contacto
+    }, 500);
+})
+
+
 
     // Gmail funcion
 var gmail = document.querySelector('#gmail');

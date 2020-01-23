@@ -138,7 +138,7 @@ font-size: 30px;
     color: rgb(93, 186, 226);
     font-size: 30px;
     text-align: center;
-    padding: 40px 0;
+    padding-top: 60px;
 }
 
 .main .trabajos .contenedor-trabajos{
@@ -194,6 +194,14 @@ footer .contenedor p{
 footer .redes-sociales{
     background: white;
     padding: 60px 0px;
+}
+
+footer .redes-sociales h3{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px;
+    margin-bottom: 20px;
 }
 
 footer .redes-sociales .contenedor{
